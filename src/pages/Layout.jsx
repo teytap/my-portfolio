@@ -9,12 +9,12 @@ const Layout = () => {
   return (
     <div>
       <Navbar bg="light" variant="light">
-        <Container>
+        <Container className="responsive">
           <Navbar.Brand>
             <img src="/images/mehtapp.png" width="50" className="avatar" />{" "}
             Mehtap Tataroğlu
           </Navbar.Brand>
-          <Nav className="ms-auto">
+          <Nav className=" ms-0 nav-responsive">
             <Nav.Item>
               <Nav.Link href="/">Home</Nav.Link>
             </Nav.Item>

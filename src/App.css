@@ -152,4 +152,8 @@ li {
   .contact-box {
     margin: 20px;
   }
+  .responsive {
+    display: flex;
+    flex-direction: column;
+  }
 }

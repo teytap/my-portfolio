@@ -72,7 +72,28 @@ export default function About() {
               <img
                 src="/images/SheCodes-Basic-Certificate.png"
                 className="img-fluid rounded certificate"
-                alt="Picture of Mehtap"
+                alt="Certificate of Mehtap"
+              />
+            </div>
+            <div className="col-md-3 mt-5">
+              <img
+                src="/images/grasshopper.png"
+                className="img-fluid rounded certificate"
+                alt="Certificate of Mehtap"
+              />
+            </div>
+            <div className="col-md-3 mt-5">
+              <img
+                src="/images/diksiyon.png"
+                className="img-fluid rounded certificate"
+                alt="Certificate of Mehtap"
+              />
+            </div>
+            <div className="col-md-3 mt-5">
+              <img
+                src="/images/"
+                className="img-fluid rounded certificate"
+                alt="Certificate of Mehtap"
               />
             </div>
           </div>
@@ -82,90 +103,86 @@ export default function About() {
       <div className="contact-box row d-flex justify-content-between text-center">
         <div className="col">
           <h2 className="">My Skills</h2>
-          <p>
-            <ul>
-              <li>
-                <FontAwesomeIcon
-                  icon={faHtml5}
-                  className="icons"
-                ></FontAwesomeIcon>
-                HTML5
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faCss3}
-                  className="icons"
-                ></FontAwesomeIcon>
-                CSS3
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faSquareJs}
-                  className="icons"
-                ></FontAwesomeIcon>
-                JavaScript
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faReact}
-                  className="icons"
-                ></FontAwesomeIcon>
-                React
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faBootstrap}
-                  className="icons"
-                ></FontAwesomeIcon>
-                Bootstrap
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faMobileScreen}
-                  className="icons"
-                ></FontAwesomeIcon>
-                Responsive Web Design
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faGears}
-                  className="icons"
-                ></FontAwesomeIcon>
-                Api Integration
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faInvision}
-                  className="icons"
-                ></FontAwesomeIcon>
-                InVision
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faGit}
-                  className="icons"
-                ></FontAwesomeIcon>
-                Git
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faGoogle}
-                  className="icons"
-                ></FontAwesomeIcon>
-                SEO
-              </li>
-              <li>
-                <FontAwesomeIcon
-                  icon={faFigma}
-                  className="icons"
-                ></FontAwesomeIcon>
-                Figma
-              </li>
-              <li>
-                <img src="/images/netlify-icon.png" alt="" width="40" /> Hosting
-              </li>
-            </ul>
-          </p>
+
+          <ul>
+            <li>
+              <FontAwesomeIcon
+                icon={faHtml5}
+                className="icons"
+              ></FontAwesomeIcon>
+              HTML5
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faCss3}
+                className="icons"
+              ></FontAwesomeIcon>
+              CSS3
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faSquareJs}
+                className="icons"
+              ></FontAwesomeIcon>
+              JavaScript
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faReact}
+                className="icons"
+              ></FontAwesomeIcon>
+              React
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faBootstrap}
+                className="icons"
+              ></FontAwesomeIcon>
+              Bootstrap
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faMobileScreen}
+                className="icons"
+              ></FontAwesomeIcon>
+              Responsive Web Design
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faGears}
+                className="icons"
+              ></FontAwesomeIcon>
+              Api Integration
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faInvision}
+                className="icons"
+              ></FontAwesomeIcon>
+              InVision
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faGit} className="icons"></FontAwesomeIcon>
+              Git
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faGoogle}
+                className="icons"
+              ></FontAwesomeIcon>
+              SEO
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faFigma}
+                className="icons"
+              ></FontAwesomeIcon>
+              Figma
+            </li>
+            <li>
+              <img src="/images/netlify-icon.png" alt="" width="40" /> Hosting
+            </li>
+          </ul>
         </div>
         <div className="col">
           <h2 className="">My Education</h2>

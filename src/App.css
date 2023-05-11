@@ -51,6 +51,14 @@ footer {
 li {
   list-style: none;
 }
+.avatar {
+  border-radius: 50px;
+  border: 4px solid var(--secondary-color);
+  box-shadow: 1px 1px 5px grey;
+}
+.avatar:hover {
+  transform: rotate(10deg);
+}
 .hero {
   background: var(--primary-color);
   text-align: center;

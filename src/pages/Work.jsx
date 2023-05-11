@@ -12,31 +12,141 @@ export default function Work() {
   // let styles = { display: props.showWork ? "block" : "none" };
   const worksArray = [
     {
+      id: 1,
       name: "Weather App",
       src: "/images/weather-react.png",
-      text: "Built with HTML, CSS , Bootstrap, API with React",
-      icons: ["{faHtml5}", "faCss3"],
+      text: "Built with HTML, CSS , Bootstrap,JS, API, React",
+      icons: [faHtml5, faCss3, faSquareJs, faBootstrap, faReact],
+      url: "https://me-weather-mt.netlify.app/",
     },
     {
+      id: 2,
       name: "Quizzical Game",
       src: "/images/quizzical.png",
-      text: "Built with HTML, CSS , API with React",
+      text: "Built with HTML, CSS , JS, API, React",
+      icons: [faHtml5, faCss3, faSquareJs, faReact],
+      url: "https://quizzical-mt.netlify.app/",
+    },
+    {
+      id: 3,
+      name: "Tenzies Game",
+      src: "/images/tenzies.png",
+      text: "Built with HTML, CSS, JS, React",
+      icons: [faHtml5, faCss3, faSquareJs, faReact],
+      url: "https://tenzies-mt.netlify.app/",
+    },
+    {
+      id: 4,
+      name: "Dictionary App",
+      src: "/images/dycto-react.png",
+      text: "Built with HTML, CSS, JS, React",
+      icons: [faHtml5, faCss3, faSquareJs, faReact],
+      url: "https://kaleidoscopic-dictionary.netlify.app/",
+    },
+    {
+      id: 5,
+      name: "Meme Generator App",
+      src: "/images/meme-generator.png",
+      text: "Built with HTML, CSS, JS, API, React",
+      icons: [faHtml5, faCss3, faSquareJs, faReact],
+      url: "https://meme-generator-mt.netlify.app/",
+    },
+    {
+      id: 6,
+      name: "Translation App",
+      src: "/images/Lingoes.png",
+      text: "Built with HTML, CSS, JS, API, React",
+      icons: [faHtml5, faCss3, faSquareJs, faReact],
+      url: "https://lingoes-mt.netlify.app/",
+    },
+    {
+      id: 7,
+      name: "Random Advice",
+      src: "/images/advice.png",
+      text: "Built with HTML, CSS, JS, API",
+      icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://nimble-palmier-99e8c1.netlify.app/",
+    },
+    {
+      id: 8,
+      name: "Weather App",
+      src: "/images/weather-tr.png",
+      text: "Built with HTML, CSS, JS, API, Bootstrap",
+      icons: [faHtml5, faCss3, faSquareJs, faBootstrap],
+      url: "https://me-weather-tr.netlify.app/",
+    },
+    {
+      id: 9,
+      name: "Calculator App",
+      src: "/images/Calculator.png",
+      text: "Built with HTML, CSS, JS",
+      icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://calculator-starlight.netlify.app/",
+    },
+    {
+      id: 10,
+      name: "Password Generator",
+      src: "/images/Password generator.png",
+      text: "Built with HTML, CSS, JS",
+      icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://passwordgenerator-mt.netlify.app/",
+    },
+    {
+      id: 11,
+      name: "World Clock",
+      src: "/images/World clock.png",
+      text: "Built with HTML, CSS, JS, API",
+      icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://candid-liger-bd876c.netlify.app/",
+    },
+    {
+      id: 12,
+      name: "Photography Portfolio",
+      src: "/images/Photography Portfolio.png",
+      text: "Built with HTML, CSS, JS, Bootstrap",
+      icons: [faHtml5, faCss3, faSquareJs, , faBootstrap],
+      url: "https://lucent-photographer.netlify.app/",
+    },
+    {
+      id: 13,
+      name: "Basketball Score App",
+      src: "/images/basketball.png",
+      text: "Built with HTML, CSS, JS",
+      icons: [faHtml5, faCss3, faSquareJs],
+    },
+    {
+      id: 14,
+      name: "Tip Splitter App",
+      src: "/images/splitter.png",
+      text: "Built with HTML, CSS, JS",
+      icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://tangerine-splitter.netlify.app/",
+    },
+    {
+      id: 15,
+      name: "Dictionary App",
+      src: "/images/Dycto.png",
+      text: "Built with HTML, CSS, API, JS",
+      icons: [faHtml5, faCss3, faSquareJs],
     },
   ];
   let worksElements = worksArray.map((work) => {
     return (
-      <div className="col-md-4 mt-4" key={work.name}>
+      <div className="col-md-4 mt-4" key={work.id}>
         <div className="about-me-description">
-          <img
-            src={work.src}
-            className="img-fluid rounded mb-2"
-            alt="weather app image"
-          />
+          <a href={work.url} target="_blank">
+            <img
+              src={work.src}
+              className="img-fluid rounded mb-2"
+              alt="weather app image"
+            />
+          </a>
+
           <h3 className="text-center m-1">{work.name}</h3>
-          <p className="text-center m-1">
+          <div className="text-center m-1">
             {work.text}
             <br />
-            {/* {work.icons?.map((iconEl) => {
+            {work.icons?.map((iconEl) => {
               return (
                 <FontAwesomeIcon
                   icon={iconEl}
@@ -44,8 +154,8 @@ export default function Work() {
                   key={iconEl}
                 ></FontAwesomeIcon>
               );
-            })} */}
-          </p>
+            })}
+          </div>
         </div>
       </div>
     );
@@ -55,331 +165,7 @@ export default function Work() {
       <div className="container">
         <div className="about-me-hero">
           <h2 className="mb-5">Take a look at what I've been working on!</h2>
-          <div className="row">
-            {worksElements}
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/weather-react.png"
-                  className="img-fluid rounded mb-2"
-                  alt="weather app image"
-                />
-                <h3 className="text-center m-1">Weather App</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS , Bootstrap, API with React
-                  <br />
-                  <FontAwesomeIcon
-                    icon={faHtml5}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faCss3}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faSquareJs}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faBootstrap}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faReact}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/quizzical.png"
-                  className="img-fluid rounded mb-2"
-                  alt="quiz game image"
-                />
-                <h3 className="text-center m-1">Quizzical Game</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS, API, JS, React
-                  <br />
-                  <FontAwesomeIcon
-                    icon={faHtml5}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faCss3}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faSquareJs}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faReact}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/tenzies.png"
-                  className="img-fluid rounded mb-2"
-                  alt="tenzies game image"
-                />
-                <h3 className="text-center m-1">Tenzies Game</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS, API, JS, React
-                  <br />
-                  <FontAwesomeIcon
-                    icon={faHtml5}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faCss3}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faSquareJs}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faReact}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/dycto-react.png"
-                  className="img-fluid rounded mb-2"
-                  alt="dictionary-app-image"
-                />
-                <h3 className="text-center m-1">Dictionary App</h3>
-                <p className="text-center m-1 mb-5">
-                  Built with HTML, CSS, API with React
-                  <br />
-                  <FontAwesomeIcon
-                    icon={faHtml5}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faCss3}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faSquareJs}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                  <FontAwesomeIcon
-                    icon={faReact}
-                    className="icons"
-                  ></FontAwesomeIcon>
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/meme-generator.png"
-                  className="img-fluid rounded mb-2"
-                  alt="meme generator image"
-                />
-                <h3 className="text-center m-1">Meme Generator App</h3>
-                <p className="text-center m-1 mb-5">
-                  Built with HTML, CSS, API with React
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                  <i className="fa-brands fa-react"></i>
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/Lingoes.png"
-                  className="img-fluid rounded mb-2"
-                  alt="lingoes translation image"
-                />
-                <h3 className="text-center m-1">Translation App</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS,JS,API
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                  <i className="fa-brands fa-bootstrap"></i>
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/advice.png"
-                  className="img-fluid rounded mb-2"
-                  alt="random advice image"
-                />
-                <h3 className="text-center m-1">Random Advice</h3>
-                <p className="text-center m-1 mb-5">
-                  Built with HTML, CSS, JS, API
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/weather-tr.png"
-                  className="img-fluid rounded mb-2"
-                  alt="my-weather-tr-image"
-                />
-                <h3 className="text-center m-1">Weather App</h3>
-                <p className="text-center m-1 mb-5">
-                  Built with HTML, CSS, API and Javascript
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                  <i className="fa-brands fa-bootstrap"></i>
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/Calculator.png"
-                  className="img-fluid rounded mb-2"
-                  alt="calculator-image"
-                />
-                <h3 className="text-center m-1">Calculator App</h3>
-                <p className="text-center m-1 mb-5">
-                  Built with HTML, CSS, API and Javascript
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/Password generator.png"
-                  className="img-fluid rounded mb-2"
-                  alt="Password image"
-                />
-                <h3 className="text-center m-1">Password Generator</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS , JS
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/World clock.png"
-                  className="img-fluid rounded mb-2"
-                  alt="world clock image"
-                />
-                <h3 className="text-center m-1">World Clock</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS, API, JS
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/Photography Portfolio.png"
-                  className="img-fluid rounded mb-2"
-                  alt="photography portfolio image"
-                />
-                <h3 className="text-center m-1">Photography Portfolio</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS, API, JS
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                  <i className="fa-brands fa-bootstrap"></i>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/basketball.png"
-                  className="img-fluid rounded mb-2"
-                  alt="basketball score image"
-                />
-                <h3 className="text-center m-1">Basketball Score App</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS, JS
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/splitter.png"
-                  className="img-fluid rounded mb-2"
-                  alt="splitter image"
-                />
-                <h3 className="text-center m-1">Tip Splitter App</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS, JS
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4 mt-4">
-              <div className="about-me-description">
-                <img
-                  src="/images/Dycto.png"
-                  className="img-fluid rounded mb-2"
-                  alt="dictionary image"
-                />
-                <h3 className="text-center m-1">Dictionary App</h3>
-                <p className="text-center m-1">
-                  Built with HTML, CSS, API, JS
-                  <br />
-                  <i className="fa-brands fa-html5"></i>
-                  <i className="fa-brands fa-css3"></i>
-                  <i className="fa-brands fa-square-js"></i>
-                </p>
-              </div>
-            </div>
-          </div>
+          <div className="row">{worksElements}</div>
         </div>
       </div>
       <div className="contact-box row d-flex justify-content-between text-center">

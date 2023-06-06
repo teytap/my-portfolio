@@ -77,6 +77,13 @@ export default function About() {
             </div>
             <div className="col-md-3 mt-5">
               <img
+                src="/images/scrimba-cer.png"
+                className="img-fluid rounded certificate"
+                alt="Certificate of Mehtap"
+              />
+            </div>
+            <div className="col-md-3 mt-5">
+              <img
                 src="/images/grasshopper.png"
                 className="img-fluid rounded certificate"
                 alt="Certificate of Mehtap"
@@ -180,7 +187,13 @@ export default function About() {
               Figma
             </li>
             <li>
-              <img src="/images/netlify-icon.png" alt="" width="40" /> Hosting
+              <img src="/images/netlify-icon.png" alt="" width="50" /> Hosting
+            </li>
+            <li>
+              <img src="/images/redux-icon.png" alt="" width="50" /> Redux
+            </li>
+            <li>
+              <img src="/images/icon-firebase.png" alt="" width="40" /> Firebase
             </li>
           </ul>
         </div>

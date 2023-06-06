@@ -73,7 +73,7 @@ export default function Work() {
       src: "/images/weather-tr.png",
       text: "Built with HTML, CSS, JS, API, Bootstrap",
       icons: [faHtml5, faCss3, faSquareJs, faBootstrap],
-      url: "https://me-weather-tr.netlify.app/",
+      url: "https://serene-bombolone-517479.netlify.app/",
     },
     {
       id: 9,

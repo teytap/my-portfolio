@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import {
@@ -29,13 +30,14 @@ export default function About() {
                   exercises, and everything is well explained, homework and
                   deadlines are good for keep focus
                 </p>
-                <a
-                  href="/work.html"
+                {/* <Link href="/work">work</Link> */}
+                <Link
+                  to="/work"
                   className="btn btn-branding mb-4"
                   title="Mehtap's work"
                 >
                   View All Projects
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-6">
@@ -47,6 +49,13 @@ export default function About() {
             </div>
 
             <h2 className="mt-5">My Certificates</h2>
+            <div className="col-md-3 mt-5">
+              <img
+                src="/images/scrimba-cer.png"
+                className="img-fluid rounded certificate"
+                alt="Certificate of Mehtap"
+              />
+            </div>
             <div className="col-md-3 mt-5">
               <img
                 src="/images/mt-react-certificate.png"
@@ -75,13 +84,7 @@ export default function About() {
                 alt="Certificate of Mehtap"
               />
             </div>
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/scrimba-cer.png"
-                className="img-fluid rounded certificate"
-                alt="Certificate of Mehtap"
-              />
-            </div>
+
             <div className="col-md-3 mt-5">
               <img
                 src="/images/grasshopper.png"
@@ -96,13 +99,13 @@ export default function About() {
                 alt="Certificate of Mehtap"
               />
             </div>
-            <div className="col-md-3 mt-5">
+            {/* <div className="col-md-3 mt-5">
               <img
                 src="/images/"
                 className="img-fluid rounded certificate"
                 alt="Certificate of Mehtap"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

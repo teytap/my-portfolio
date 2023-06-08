@@ -146,12 +146,13 @@ export default function Work() {
           <div className="text-center m-1">
             {work.text}
             <br />
-            {work.icons?.map((iconEl) => {
+            {work.icons?.map((iconEl, i) => {
               return (
                 <FontAwesomeIcon
                   icon={iconEl}
                   className="icons"
-                  key={iconEl}
+                  // key={iconEl}
+                  key={i}
                 ></FontAwesomeIcon>
               );
             })}

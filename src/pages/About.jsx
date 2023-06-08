@@ -15,6 +15,65 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faGears, faMobileScreen } from "@fortawesome/free-solid-svg-icons";
 export default function About() {
+  const mySkillsArray = [
+    {
+      name: "HTML5",
+      icon: faHtml5,
+    },
+    {
+      name: "CSS3",
+      icon: faCss3,
+    },
+    {
+      name: "JavaScript",
+      icon: faSquareJs,
+    },
+    {
+      name: "Bootstrap",
+      icon: faBootstrap,
+    },
+    {
+      name: "React",
+      icon: faReact,
+    },
+    {
+      name: "Responsive Web Design",
+      icon: faMobileScreen,
+    },
+    {
+      name: "Api Integration",
+      icon: faGears,
+    },
+    {
+      name: "InVision",
+      icon: faInvision,
+    },
+    {
+      name: "Git",
+      icon: faGit,
+    },
+    {
+      name: "SEO",
+      icon: faGoogle,
+    },
+    {
+      name: "Figma",
+      icon: faFigma,
+    },
+    {
+      name: "Git",
+      icon: faGit,
+    },
+  ];
+  const myCertificatesArray = [
+    "/images/scrimba-cer.png",
+    "/images/mt-react-certificate.png",
+    "/images/SheCodes-Responsive-Certificate.png",
+    "/images/SheCodes-Plus Certificate.png",
+    "/images/SheCodes-Basic-Certificate.png",
+    "/images/grasshopper.png",
+    "/images/diksiyon.png",
+  ];
   return (
     <div className="about">
       <div className="container">
@@ -49,63 +108,17 @@ export default function About() {
             </div>
 
             <h2 className="mt-5">My Certificates</h2>
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/scrimba-cer.png"
-                className="img-fluid rounded certificate"
-                alt="Certificate of Mehtap"
-              />
-            </div>
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/mt-react-certificate.png"
-                className="img-fluid rounded certificate"
-                alt="Picture of Mehtap"
-              />
-            </div>
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/SheCodes-Responsive-Certificate.png"
-                className="img-fluid rounded certificate"
-                alt="Picture of Mehtap"
-              />
-            </div>
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/SheCodes-Plus Certificate.png"
-                className="img-fluid rounded certificate"
-                alt="Picture of Mehtap"
-              />
-            </div>
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/SheCodes-Basic-Certificate.png"
-                className="img-fluid rounded certificate"
-                alt="Certificate of Mehtap"
-              />
-            </div>
-
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/grasshopper.png"
-                className="img-fluid rounded certificate"
-                alt="Certificate of Mehtap"
-              />
-            </div>
-            <div className="col-md-3 mt-5">
-              <img
-                src="/images/diksiyon.png"
-                className="img-fluid rounded certificate"
-                alt="Certificate of Mehtap"
-              />
-            </div>
-            {/* <div className="col-md-3 mt-5">
-              <img
-                src="/images/"
-                className="img-fluid rounded certificate"
-                alt="Certificate of Mehtap"
-              />
-            </div> */}
+            {myCertificatesArray?.map((src, i) => {
+              return (
+                <div className="col-md-3 mt-5" key={i}>
+                  <img
+                    src={src}
+                    className="img-fluid rounded certificate"
+                    alt="Certificate of Mehtap"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -115,80 +128,18 @@ export default function About() {
           <h2 className="">My Skills</h2>
 
           <ul>
-            <li>
-              <FontAwesomeIcon
-                icon={faHtml5}
-                className="icons"
-              ></FontAwesomeIcon>
-              HTML5
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faCss3}
-                className="icons"
-              ></FontAwesomeIcon>
-              CSS3
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faSquareJs}
-                className="icons"
-              ></FontAwesomeIcon>
-              JavaScript
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faReact}
-                className="icons"
-              ></FontAwesomeIcon>
-              React
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faBootstrap}
-                className="icons"
-              ></FontAwesomeIcon>
-              Bootstrap
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faMobileScreen}
-                className="icons"
-              ></FontAwesomeIcon>
-              Responsive Web Design
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faGears}
-                className="icons"
-              ></FontAwesomeIcon>
-              Api Integration
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faInvision}
-                className="icons"
-              ></FontAwesomeIcon>
-              InVision
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faGit} className="icons"></FontAwesomeIcon>
-              Git
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faGoogle}
-                className="icons"
-              ></FontAwesomeIcon>
-              SEO
-            </li>
-            <li>
-              <FontAwesomeIcon
-                icon={faFigma}
-                className="icons"
-              ></FontAwesomeIcon>
-              Figma
-            </li>
+            {mySkillsArray?.map((iconEl, i) => {
+              return (
+                <li key={i}>
+                  <FontAwesomeIcon
+                    icon={iconEl.icon}
+                    className="icons"
+                  ></FontAwesomeIcon>
+                  {iconEl.name}
+                </li>
+              );
+            })}
+
             <li>
               <img src="/images/netlify-icon.png" alt="" width="50" /> Hosting
             </li>

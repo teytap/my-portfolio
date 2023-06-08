@@ -88,6 +88,11 @@ li {
   line-height: 27px;
   padding: 15px 30px;
 }
+.btn-branding:hover {
+  transition: all 200ms ease-in-out;
+  background-color: #5049cd;
+  color: white;
+}
 .btn-projects {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);

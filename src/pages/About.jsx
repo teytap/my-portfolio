@@ -147,7 +147,7 @@ export default function About() {
         <div className="col">
           <h2 className="">My Skills</h2>
 
-          <ul>
+          <ul className="mb-5">
             {mySkillsArray?.map((iconEl, i) => {
               return (
                 <li key={i}>
@@ -175,32 +175,50 @@ export default function About() {
           <h2 className="">My Education</h2>
           <ul>
             <li>
-              <img
-                src="https://www.metu.edu.tr/system/files/logo_orj/3/3.4.png"
-                alt=""
-                width="400"
-              />{" "}
+              <a
+                href="https://www.metu.edu.tr/en"
+                target="_blank"
+                re="no-referer"
+              >
+                <img
+                  src="https://www.metu.edu.tr/system/files/logo_orj/3/3.4.png"
+                  alt=""
+                  width="400"
+                />
+              </a>{" "}
             </li>
             <li className="mb-5">Mathematics</li>
           </ul>
           <h2 className="">My Courses</h2>
           <ul>
             <li>
-              <img
-                src="https://www.shecodes.io/assets/branding/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png"
-                alt=""
-                width="200"
-                className="mb-2"
-              />
+              <a
+                href="https://www.shecodes.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.shecodes.io/assets/branding/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png"
+                  alt=""
+                  width="200"
+                  className="mb-2"
+                />
+              </a>
             </li>
             <li>Front-end developing</li>
             <li>
-              <img
-                src="/images/scrimba.jpeg"
-                alt=""
-                width="220"
-                className="mb-2"
-              />
+              <a
+                href="https://scrimba.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/scrimba.jpeg"
+                  alt=""
+                  width="220"
+                  className="mb-2"
+                />
+              </a>
             </li>
             <li>Front-end developing</li>
           </ul>

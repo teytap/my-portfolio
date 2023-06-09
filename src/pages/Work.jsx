@@ -124,16 +124,46 @@ export default function Work() {
     },
     {
       id: 15,
-      name: "Dictionary App",
-      src: "/images/Dycto.png",
+      name: "Speed Typing Game",
+      src: "/images/speed-typing.png",
+      text: "Built with HTML, CSS, API, React",
+      icons: [faHtml5, faCss3, faReact],
+      url: "https://speed-typing-game-mt.netlify.app",
+    },
+    {
+      id: 16,
+      name: "Color Scheme Generator App",
+      src: "/images/color-scheme.png",
       text: "Built with HTML, CSS, API, JS",
       icons: [faHtml5, faCss3, faSquareJs],
+    },
+    {
+      id: 17,
+      name: "Movie Watch List App",
+      src: "/images/movie-watch.png",
+      text: "Built with HTML, CSS, API, JS",
+      icons: [faHtml5, faCss3, faSquareJs],
+    },
+    {
+      id: 18,
+      name: "Messagus App",
+      src: "/images/messagus.png",
+      text: "Built with HTML, CSS, API, JS",
+      icons: [faHtml5, faCss3, faSquareJs],
+    },
+    {
+      id: 19,
+      name: "Dashboard App",
+      src: "/images/dashboard.png",
+      text: "Built with HTML, CSS, API, JS. Chrome-extension, todo-list",
+      icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://dashboard-mt.netlify.app/",
     },
   ];
   let worksElements = worksArray.map((work) => {
     return (
       <div className="col-md-4 mt-4" key={work.id}>
-        <div className="about-me-description">
+        <div className="about-me-description  projects">
           <a href={work.url} target="_blank">
             <img
               src={work.src}

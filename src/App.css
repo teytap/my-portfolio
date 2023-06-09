@@ -137,6 +137,16 @@ li {
   background-color: #f9f7fe;
   padding: 20px 20px;
 }
+.certificate:hover {
+  scale: 2;
+  transition: all 400ms ease-in-out;
+}
+.projects:hover,
+a:hover {
+  scale: 1.1;
+  transition: all 200ms ease-in-out;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 48px;
@@ -163,5 +173,12 @@ li {
   .responsive {
     display: flex;
     flex-direction: column;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  .certificate:hover {
+    scale: 1.1;
   }
 }

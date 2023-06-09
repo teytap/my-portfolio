@@ -19,7 +19,7 @@ const Layout = () => {
               <Nav.Link href="/">Home</Nav.Link>
             </Nav.Item>
 
-            <Nav.Link href="/about" to="/about">
+            <Nav.Link as={Link} to="/about">
               About
             </Nav.Link>
 

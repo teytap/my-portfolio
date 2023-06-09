@@ -16,17 +16,25 @@ const Layout = () => {
           </Navbar.Brand>
           <Nav className=" ms-0 nav-responsive">
             <Nav.Item>
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link as={Link} href="/">
+                Home
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/about">
+                About
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/work">
+                Work
+              </Nav.Link>
             </Nav.Item>
 
-            <Nav.Link as={Link} to="/about">
-              About
-            </Nav.Link>
-
-            <Nav.Link href="/work">Work</Nav.Link>
-
             <Nav.Item>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                Contact
+              </Nav.Link>
             </Nav.Item>
           </Nav>
         </Container>

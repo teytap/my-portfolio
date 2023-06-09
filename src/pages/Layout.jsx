@@ -16,7 +16,7 @@ const Layout = () => {
           </Navbar.Brand>
           <Nav className=" ms-0 nav-responsive">
             <Nav.Item>
-              <Nav.Link as={Link} href="/">
+              <Nav.Link as={Link} to="/">
                 Home
               </Nav.Link>
             </Nav.Item>

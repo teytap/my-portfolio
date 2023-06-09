@@ -113,6 +113,7 @@ export default function Work() {
       src: "/images/basketball.png",
       text: "Built with HTML, CSS, JS",
       icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://ornate-torrone-ec322d.netlify.app",
     },
     {
       id: 14,
@@ -136,6 +137,7 @@ export default function Work() {
       src: "/images/color-scheme.png",
       text: "Built with HTML, CSS, API, JS",
       icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://color-scheme-mt.netlify.app",
     },
     {
       id: 17,
@@ -143,6 +145,7 @@ export default function Work() {
       src: "/images/movie-watch.png",
       text: "Built with HTML, CSS, API, JS",
       icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://movie-watch-list-mt.netlify.app",
     },
     {
       id: 18,
@@ -150,6 +153,7 @@ export default function Work() {
       src: "/images/messagus.png",
       text: "Built with HTML, CSS, API, JS",
       icons: [faHtml5, faCss3, faSquareJs],
+      url: "https://tiny-message-us.netlify.app",
     },
     {
       id: 19,

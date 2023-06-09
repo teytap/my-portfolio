@@ -66,13 +66,31 @@ export default function About() {
     },
   ];
   const myCertificatesArray = [
-    "/images/scrimba-cer.png",
-    "/images/mt-react-certificate.png",
-    "/images/SheCodes-Responsive-Certificate.png",
-    "/images/SheCodes-Plus Certificate.png",
-    "/images/SheCodes-Basic-Certificate.png",
-    "/images/grasshopper.png",
-    "/images/diksiyon.png",
+    {
+      img: "/images/scrimba-cer.png",
+      src: "https://scrimba.com/certificate/uxQer9t7/gfrontend",
+    },
+    {
+      img: "/images/mt-react-certificate.png",
+      src: "https://www.shecodes.io/certificates/8f28e9f61558047ceba8e09b09772b9c",
+    },
+    {
+      img: "/images/SheCodes-Responsive-Certificate.png",
+      src: "https://www.shecodes.io/certificates/88781d5752d034aef6642caa485b18d6",
+    },
+    {
+      img: "/images/SheCodes-Plus Certificate.png",
+      src: "https://www.shecodes.io/certificates/cead4f2b642c6aef71687e67a42976f9",
+    },
+    {
+      img: "/images/SheCodes-Basic-Certificate.png",
+      src: "https://www.shecodes.io/certificates/86d8d71bf8c3ad7ab358688beb0cb5d1",
+    },
+    { img: "/images/grasshopper.png", src: "" },
+    {
+      img: "/images/diksiyon.png",
+      src: "",
+    },
   ];
   return (
     <div className="about">
@@ -108,14 +126,16 @@ export default function About() {
             </div>
 
             <h2 className="mt-5">My Certificates</h2>
-            {myCertificatesArray?.map((src, i) => {
+            {myCertificatesArray?.map((cer, i) => {
               return (
                 <div className="col-md-3 mt-5" key={i}>
-                  <img
-                    src={src}
-                    className="img-fluid rounded certificate"
-                    alt="Certificate of Mehtap"
-                  />
+                  <a href={cer.src} rel="no-referer" target="_blank">
+                    <img
+                      src={cer.img}
+                      className="img-fluid rounded certificate"
+                      alt="Certificate of Mehtap"
+                    />
+                  </a>
                 </div>
               );
             })}

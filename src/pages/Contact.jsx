@@ -1,4 +1,5 @@
 import React from "react";
+import Inquiry from "../assets/Inquiry";
 export default function Contact() {
   // let styles = { display: props.showContact ? "block" : "none" };
   return (
@@ -38,24 +39,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="contact-box row d-flex justify-content-between text-center">
-        <div className="col">
-          <h2 className="">Work Inquiry</h2>
-          <p>Let's work together and I'll help you by all my best</p>
-        </div>
-        <div className="col">
-          <a
-            href="mailto:teytap@gmail.com"
-            className="btn btn-branding mt-5 text-center"
-            id="contact"
-          >
-            Contact Me
-          </a>
-        </div>
-      </div>
-      <a href="mailto:teytap@gmail.com" className="mail-link">
-        teytap@gmail.com
-      </a>
+      <Inquiry />
       <br />
     </div>
   );

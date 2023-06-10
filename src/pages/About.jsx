@@ -1,97 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import myData from "../../data";
+import Inquiry from "../assets/Inquiry";
 
-import {
-  faHtml5,
-  faCss3,
-  faSquareJs,
-  faReact,
-  faBootstrap,
-  faInvision,
-  faGoogle,
-  faGit,
-  faFigma,
-} from "@fortawesome/free-brands-svg-icons";
-import { faGears, faMobileScreen } from "@fortawesome/free-solid-svg-icons";
 export default function About() {
-  const mySkillsArray = [
-    {
-      name: "HTML5",
-      icon: faHtml5,
-    },
-    {
-      name: "CSS3",
-      icon: faCss3,
-    },
-    {
-      name: "JavaScript",
-      icon: faSquareJs,
-    },
-    {
-      name: "Bootstrap",
-      icon: faBootstrap,
-    },
-    {
-      name: "React",
-      icon: faReact,
-    },
-    {
-      name: "Responsive Web Design",
-      icon: faMobileScreen,
-    },
-    {
-      name: "Api Integration",
-      icon: faGears,
-    },
-    {
-      name: "InVision",
-      icon: faInvision,
-    },
-    {
-      name: "Git",
-      icon: faGit,
-    },
-    {
-      name: "SEO",
-      icon: faGoogle,
-    },
-    {
-      name: "Figma",
-      icon: faFigma,
-    },
-    {
-      name: "Git",
-      icon: faGit,
-    },
-  ];
-  const myCertificatesArray = [
-    {
-      img: "/images/scrimba-cer.png",
-      src: "https://scrimba.com/certificate/uxQer9t7/gfrontend",
-    },
-    {
-      img: "/images/mt-react-certificate.png",
-      src: "https://www.shecodes.io/certificates/8f28e9f61558047ceba8e09b09772b9c",
-    },
-    {
-      img: "/images/SheCodes-Responsive-Certificate.png",
-      src: "https://www.shecodes.io/certificates/88781d5752d034aef6642caa485b18d6",
-    },
-    {
-      img: "/images/SheCodes-Plus Certificate.png",
-      src: "https://www.shecodes.io/certificates/cead4f2b642c6aef71687e67a42976f9",
-    },
-    {
-      img: "/images/SheCodes-Basic-Certificate.png",
-      src: "https://www.shecodes.io/certificates/86d8d71bf8c3ad7ab358688beb0cb5d1",
-    },
-    { img: "/images/grasshopper.png", src: "" },
-    {
-      img: "/images/diksiyon.png",
-      src: "",
-    },
-  ];
   return (
     <div className="about">
       <div className="container">
@@ -107,7 +20,7 @@ export default function About() {
                   exercises, and everything is well explained, homework and
                   deadlines are good for keep focus
                 </p>
-                {/* <Link href="/work">work</Link> */}
+
                 <Link
                   to="/work"
                   className="btn btn-branding mb-4"
@@ -126,7 +39,7 @@ export default function About() {
             </div>
 
             <h2 className="mt-5">My Certificates</h2>
-            {myCertificatesArray?.map((cer, i) => {
+            {myData.myCertificatesArray?.map((cer, i) => {
               return (
                 <div className="col-md-3 mt-5" key={i}>
                   <a href={cer.src} rel="no-referer" target="_blank">
@@ -148,7 +61,7 @@ export default function About() {
           <h2 className="">My Skills</h2>
 
           <ul className="mb-5">
-            {mySkillsArray?.map((iconEl, i) => {
+            {myData.mySkillsArray?.map((iconEl, i) => {
               return (
                 <li key={i}>
                   <FontAwesomeIcon
@@ -224,24 +137,7 @@ export default function About() {
           </ul>
         </div>
       </div>
-      <div className="contact-box row d-flex justify-content-between text-center">
-        <div className="col">
-          <h2 className="">Work Inquiry</h2>
-          <p>Let's work together and I'll help you by all my best</p>
-        </div>
-        <div className="col">
-          <a
-            href="mailto:teytap@gmail.com"
-            className="btn btn-branding mt-5 text-center"
-            id="contact"
-          >
-            Contact Me
-          </a>
-        </div>
-      </div>
-      <a href="mailto:teytap@gmail.com" className="mail-link">
-        teytap@gmail.com
-      </a>
+      <Inquiry />
       <br />
     </div>
   );

@@ -1,170 +1,12 @@
 import React from "react";
+import myData from "../../data";
+import Inquiry from "../assets/Inquiry";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import {
-  faSquareJs,
-  faHtml5,
-  faCss3,
-  faReact,
-  faBootstrap,
-} from "@fortawesome/free-brands-svg-icons";
+
 export default function Work() {
   // let styles = { display: props.showWork ? "block" : "none" };
-  const worksArray = [
-    {
-      id: 1,
-      name: "Weather App",
-      src: "/images/weather-react.png",
-      text: "Built with HTML, CSS , Bootstrap,JS, API, React",
-      icons: [faHtml5, faCss3, faSquareJs, faBootstrap, faReact],
-      url: "https://me-weather-mt.netlify.app/",
-    },
-    {
-      id: 2,
-      name: "Quizzical Game",
-      src: "/images/quizzical.png",
-      text: "Built with HTML, CSS , JS, API, React",
-      icons: [faHtml5, faCss3, faSquareJs, faReact],
-      url: "https://quizzical-mt.netlify.app/",
-    },
-    {
-      id: 3,
-      name: "Tenzies Game",
-      src: "/images/tenzies.png",
-      text: "Built with HTML, CSS, JS, React",
-      icons: [faHtml5, faCss3, faSquareJs, faReact],
-      url: "https://tenzies-mt.netlify.app/",
-    },
-    {
-      id: 4,
-      name: "Dictionary App",
-      src: "/images/dycto-react.png",
-      text: "Built with HTML, CSS, JS, React",
-      icons: [faHtml5, faCss3, faSquareJs, faReact],
-      url: "https://kaleidoscopic-dictionary.netlify.app/",
-    },
-    {
-      id: 5,
-      name: "Meme Generator App",
-      src: "/images/meme-generator.png",
-      text: "Built with HTML, CSS, JS, API, React",
-      icons: [faHtml5, faCss3, faSquareJs, faReact],
-      url: "https://meme-generator-mt.netlify.app/",
-    },
-    {
-      id: 6,
-      name: "Translation App",
-      src: "/images/Lingoes.png",
-      text: "Built with HTML, CSS, JS, API, React",
-      icons: [faHtml5, faCss3, faSquareJs, faReact],
-      url: "https://lingoes-mt.netlify.app/",
-    },
-    {
-      id: 7,
-      name: "Random Advice",
-      src: "/images/advice.png",
-      text: "Built with HTML, CSS, JS, API",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://nimble-palmier-99e8c1.netlify.app/",
-    },
-    {
-      id: 8,
-      name: "Weather App",
-      src: "/images/weather-tr.png",
-      text: "Built with HTML, CSS, JS, API, Bootstrap",
-      icons: [faHtml5, faCss3, faSquareJs, faBootstrap],
-      url: "https://serene-bombolone-517479.netlify.app/",
-    },
-    {
-      id: 9,
-      name: "Calculator App",
-      src: "/images/Calculator.png",
-      text: "Built with HTML, CSS, JS",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://calculator-starlight.netlify.app/",
-    },
-    {
-      id: 10,
-      name: "Password Generator",
-      src: "/images/Password generator.png",
-      text: "Built with HTML, CSS, JS",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://passwordgenerator-mt.netlify.app/",
-    },
-    {
-      id: 11,
-      name: "World Clock",
-      src: "/images/World clock.png",
-      text: "Built with HTML, CSS, JS, API",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://candid-liger-bd876c.netlify.app/",
-    },
-    {
-      id: 12,
-      name: "Photography Portfolio",
-      src: "/images/Photography Portfolio.png",
-      text: "Built with HTML, CSS, JS, Bootstrap",
-      icons: [faHtml5, faCss3, faSquareJs, , faBootstrap],
-      url: "https://lucent-photographer.netlify.app/",
-    },
-    {
-      id: 13,
-      name: "Basketball Score App",
-      src: "/images/basketball.png",
-      text: "Built with HTML, CSS, JS",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://ornate-torrone-ec322d.netlify.app",
-    },
-    {
-      id: 14,
-      name: "Tip Splitter App",
-      src: "/images/splitter.png",
-      text: "Built with HTML, CSS, JS",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://tangerine-splitter.netlify.app/",
-    },
-    {
-      id: 15,
-      name: "Speed Typing Game",
-      src: "/images/speed-typing.png",
-      text: "Built with HTML, CSS, API, React",
-      icons: [faHtml5, faCss3, faReact],
-      url: "https://speed-typing-game-mt.netlify.app",
-    },
-    {
-      id: 16,
-      name: "Color Scheme Generator App",
-      src: "/images/color-scheme.png",
-      text: "Built with HTML, CSS, API, JS",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://color-scheme-mt.netlify.app",
-    },
-    {
-      id: 17,
-      name: "Movie Watch List App",
-      src: "/images/movie-watch.png",
-      text: "Built with HTML, CSS, API, JS",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://movie-watch-list-mt.netlify.app",
-    },
-    {
-      id: 18,
-      name: "Messagus App",
-      src: "/images/messagus.png",
-      text: "Built with HTML, CSS, API, JS",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://tiny-message-us.netlify.app",
-    },
-    {
-      id: 19,
-      name: "Dashboard App",
-      src: "/images/dashboard.png",
-      text: "Built with HTML, CSS, API, JS. Chrome-extension, todo-list",
-      icons: [faHtml5, faCss3, faSquareJs],
-      url: "https://dashboard-mt.netlify.app/",
-    },
-  ];
-  let worksElements = worksArray.map((work) => {
+
+  let worksElements = myData.worksArray.map((work) => {
     return (
       <div className="col-md-4 mt-4" key={work.id}>
         <div className="about-me-description  projects">
@@ -203,24 +45,8 @@ export default function Work() {
           <div className="row">{worksElements}</div>
         </div>
       </div>
-      <div className="contact-box row d-flex justify-content-between text-center">
-        <div className="col">
-          <h2 className="">Work Inquiry</h2>
-          <p>Let's work together and I'll help you by all my best</p>
-        </div>
-        <div className="col">
-          <a
-            href="mailto:teytap@gmail.com"
-            className="btn btn-branding mt-5 text-center"
-            id="contact"
-          >
-            Contact Me
-          </a>
-        </div>
-      </div>
-      <a href="mailto:teytap@gmail.com" className="mail-link">
-        teytap@gmail.com
-      </a>
+      <Inquiry />
+
       <br />
     </div>
   );

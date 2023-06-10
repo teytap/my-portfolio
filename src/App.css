@@ -40,7 +40,7 @@ footer {
   margin-bottom: 60px;
 }
 .icons {
-  font-size: 40px;
+  font-size: 32px;
   color: var(--secondary-color);
   margin: 10px;
 }
@@ -79,6 +79,14 @@ li {
   font-weight: normal;
   line-height: 2;
   margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(2em);
+  animation: fadeinUp 1.5s ease 1.5s forwards;
+}
+.hero h1 {
+  opacity: 0;
+  transform: translateY(1em);
+  animation: fadeinUp 1.5s ease 300ms forwards;
 }
 .btn-branding {
   background: var(--secondary-color);
@@ -141,12 +149,18 @@ li {
   scale: 2;
   transition: all 400ms ease-in-out;
 }
+
 .projects:hover,
 a:hover {
   scale: 1.1;
   transition: all 200ms ease-in-out;
 }
-
+@keyframes fadeinUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @media (max-width: 768px) {
   h1 {
     font-size: 48px;
@@ -180,5 +194,8 @@ a:hover {
   }
   .certificate:hover {
     scale: 1.1;
+  }
+  .icons {
+    font-size: 1.5em;
   }
 }

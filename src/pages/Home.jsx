@@ -6,7 +6,7 @@ export default function Home() {
     <div className="home">
       {" "}
       <div className="hero">
-        <p>👋🏻 Hi, I am</p>
+        <p> Hi, I am</p>
         <h1>Mehtap Tataroğlu</h1>
         <h2>Front-end developer based in Turkey</h2>
 

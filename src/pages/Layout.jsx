@@ -15,10 +15,11 @@ const Layout = () => {
             Mehtap Tataroğlu
           </Navbar.Brand>
           <Nav className=" ms-0 nav-responsive">
-            <Nav.Link as={Link} to="/">
-              Home
-            </Nav.Link>
-
+            <Nav.Item>
+              <Nav.Link as={Link} to="/">
+                Home
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to="/about">
                 About

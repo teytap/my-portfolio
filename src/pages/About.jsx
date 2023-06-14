@@ -12,13 +12,18 @@ export default function About() {
           <div className="row">
             <div className="col-md-6">
               <div className="about-me-description">
-                <h2 className="">Hi I am Mehtap Tataroğlu</h2>
+                <h2 className="">Mehtap Tataroğlu</h2>
                 <h6>Front-end developer based in Turkey</h6>
                 <p>
-                  For anyone who wants to start learning code, this workshop is
-                  very interesting. You will be challenged with different
-                  exercises, and everything is well explained, homework and
-                  deadlines are good for keep focus
+                  Motivated Frontend Developer with a bachelor's degree in
+                  Mathematics and a background in web development. Offering
+                  expertise in React, React Hooks, Redux, HTML, CSS, and
+                  JavaScript, along with ability to create responsive and
+                  visually appealing user interfaces. Passionate about
+                  problem-solving and dedicated to delivering high-quality
+                  solutions. Seeking challenging opportunities to leverage my
+                  technical skills and contribute to the success of a dynamic
+                  organization. Good team player.
                 </p>
 
                 <Link
@@ -33,7 +38,7 @@ export default function About() {
             <div className="col-md-6">
               <img
                 src="/images/mehtapp.png"
-                className="img-fluid rounded"
+                className="img-fluid rounded "
                 alt="Picture of Mehtap"
               />
             </div>

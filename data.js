@@ -26,24 +26,8 @@ const myData = {
       icon: faSquareJs,
     },
     {
-      name: "Bootstrap",
-      icon: faBootstrap,
-    },
-    {
       name: "React",
       icon: faReact,
-    },
-    {
-      name: "Responsive Web Design",
-      icon: faMobileScreen,
-    },
-    {
-      name: "Api Integration",
-      icon: faGears,
-    },
-    {
-      name: "InVision",
-      icon: faInvision,
     },
     {
       name: "Git",
@@ -58,8 +42,48 @@ const myData = {
       icon: faFigma,
     },
     {
-      name: "Git",
-      icon: faGit,
+      name: "Bootstrap",
+      icon: faBootstrap,
+    },
+
+    {
+      name: "Responsive Web Design",
+      icon: faMobileScreen,
+    },
+    {
+      name: "Api Integration",
+      icon: faGears,
+    },
+    {
+      name: "InVision",
+      icon: faInvision,
+    },
+  ],
+  mySkillsArray2: [
+    {
+      name: "Hosting",
+      src: "/images/icon-netlify.svg",
+    },
+    {
+      name: "Firebase",
+      src: "/images/icon-firebase.png",
+    },
+    {
+      name: "Next.js",
+      src: "/images/icon-next-js.svg",
+    },
+
+    {
+      name: "Tailwind",
+      src: "/images/icon-tailwind.svg",
+    },
+    {
+      name: "Typescript",
+      src: "/images/icon-typescript.svg",
+    },
+    {
+      name: "Redux",
+      src: "/images/icon-redux.svg",
     },
   ],
   myCertificatesArray: [
@@ -118,7 +142,7 @@ const myData = {
       id: 4,
       name: "Dictionary App",
       src: "/images/dycto-react.png",
-      text: "Built with HTML, CSS, JS, React",
+      text: "Built with HTML, CSS, JS, React, API",
       icons: [faHtml5, faCss3, faSquareJs, faReact],
       url: "https://kaleidoscopic-dictionary.netlify.app/",
     },
@@ -230,7 +254,7 @@ const myData = {
       id: 18,
       name: "Message Us App",
       src: "/images/messagus.png",
-      text: "Built with HTML, CSS, API, JS",
+      text: "Built with HTML, CSS, API, JS, Firebase",
       icons: [faHtml5, faCss3, faGears, faSquareJs],
       url: "https://tiny-message-us.netlify.app",
     },

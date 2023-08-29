@@ -17,13 +17,17 @@ export default function About() {
                 <p>
                   Motivated Frontend Developer with a bachelor's degree in
                   Mathematics and a background in web development. Offering
-                  expertise in React, React Hooks, Redux, HTML, CSS, and
-                  JavaScript, along with ability to create responsive and
-                  visually appealing user interfaces. Passionate about
-                  problem-solving and dedicated to delivering high-quality
-                  solutions. Seeking challenging opportunities to leverage my
-                  technical skills and contribute to the success of a dynamic
-                  organization. Good team player.
+                  expertise in{" "}
+                  <span className="fw-bold">
+                    React, React Hooks, Redux, Next.js, TypeScript, Tailwind,
+                    HTML, CSS, and JavaScript
+                  </span>
+                  , along with ability to create responsive and visually
+                  appealing user interfaces. Passionate about problem-solving
+                  and dedicated to delivering high-quality solutions. Seeking
+                  challenging opportunities to leverage my technical skills and
+                  contribute to the success of a dynamic organization. Good team
+                  player.
                 </p>
 
                 <Link
@@ -65,10 +69,13 @@ export default function About() {
         <div className="col">
           <h2 className="">My Skills</h2>
 
-          <ul className="mb-5">
+          <ul className="mt-5 mb-5 d-flex flex-wrap">
             {myData.mySkillsArray?.map((iconEl, i) => {
               return (
-                <li key={i}>
+                <li
+                  key={i}
+                  className="flex-grow-1 bg-white py-1 px-3 m-1 rounded"
+                >
                   <FontAwesomeIcon
                     icon={iconEl.icon}
                     className="icons"
@@ -77,16 +84,17 @@ export default function About() {
                 </li>
               );
             })}
-
-            <li>
-              <img src="/images/netlify-icon.png" alt="" width="50" /> Hosting
-            </li>
-            <li>
-              <img src="/images/redux-icon.png" alt="" width="50" /> Redux
-            </li>
-            <li>
-              <img src="/images/icon-firebase.png" alt="" width="40" /> Firebase
-            </li>
+            {myData.mySkillsArray2?.map((iconEl, i) => {
+              return (
+                <li
+                  key={i}
+                  className="flex-grow-1 bg-white py-1 px-3 m-1 rounded"
+                >
+                  <img src={iconEl.src} alt="" width="32" className="icons" />{" "}
+                  {iconEl.name}
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="col">
@@ -118,8 +126,8 @@ export default function About() {
                 <img
                   src="https://www.shecodes.io/assets/branding/logo-shecodes-f9fa0540d113c086f61eb6e89466c0cbd24a42163b6a96d4b01da078803f53ee.png"
                   alt=""
-                  width="200"
-                  className="mb-2"
+                  width="180"
+                  className="mb-2 mt-4"
                 />
               </a>
             </li>
@@ -130,12 +138,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="/images/scrimba.jpeg"
-                  alt=""
-                  width="220"
-                  className="mb-2"
-                />
+                <img src="/images/scrimba.jpeg" alt="" width="220" />
               </a>
             </li>
             <li>Front-end developing</li>

@@ -5,12 +5,16 @@ font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;*/
 :root {
   --primary-color: #f9f7fe;
-  --secondary-color: #6c63ff;
+  /* --secondary-color: #6c63ff; */
+  --secondary-color: #6fd98c;
+  --third-color: #5fc77b;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 body {
   font-family: var(--default-font-family);
+  /* background-color: #3e3b4a;
+  color: white; */
 }
 h1 {
   font-family: var(--heading-font-family);
@@ -41,16 +45,18 @@ footer {
 }
 .icons {
   font-size: 32px;
-  color: var(--secondary-color);
-  margin: 10px;
+  color: #6c63ff;
+  margin: 10px 10px 10px 0px;
 }
 .icons:hover {
   transition: all 200ms ease-in-out;
-  color: #5c55e0;
+  /* color: #5c55e0; */
+  color: var(--third-color);
 }
+
 li {
-  list-style: none;
   display: flex;
+  list-style: none;
   align-items: center;
   justify-content: center;
 }
@@ -98,7 +104,8 @@ li {
 }
 .btn-branding:hover {
   transition: all 200ms ease-in-out;
-  background-color: #5049cd;
+  /* background-color: #5049cd; */
+  background-color: var(--third-color);
   color: white;
 }
 .btn-projects {
@@ -108,12 +115,15 @@ li {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  box-shadow: 3px 3px 7px grey;
 }
 
 .project-description {
   margin: 100px 60px;
 }
-
+.project {
+  box-shadow: 3px 3px 7px grey;
+}
 .about-me-hero {
   padding: 90px 10px 160px 10px;
 }
@@ -170,7 +180,7 @@ a:hover {
     line-height: 1;
   }
   .hero {
-    padding: 80px 20px;
+    padding: 40px 20px;
   }
   .project-description {
     text-align: center;
